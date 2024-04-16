@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 app = Flask(__name__)
-CORS(app, resources={r"/predict": {"origins": "http://127.0.0.1:3000"}})
+CORS(app, resources={r"/predict": {"origins": "https://tejaschoukale.github.io"}})
 
 # Allow CORS for POST and OPTIONS methods
 @app.after_request
