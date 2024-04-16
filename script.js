@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
         // Fetch the value of 'years' input field
         var years = document.getElementById('years').value;
 
-        // Construct the request payload with 'features' key
+        // Construct the request payload with 'years' key
         var payload = {
-            'features': [parseInt(years)]  // Assuming 'years' is the feature for prediction
+            'years': years
         };
 
         // Send a POST request to the Flask server with the constructed payload
